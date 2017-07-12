@@ -1,3 +1,8 @@
 languageCode = "en-us"
 title = "Non-volatile Memory"
 baseURL = "https://nvram.io/"
+pygmentsStyle = "eighties"
+
+[params]
+  title = "Non-volatile Memory"
+  pygmentscodefences = true
