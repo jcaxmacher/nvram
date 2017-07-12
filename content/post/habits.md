@@ -17,8 +17,8 @@ could go wrong?
 I don't want to lie to you, dear reader.  This is not my first blog.
 The road behind me is littered with cleverly titled (or so I thought) and
 sparsely populated blogs.  This time, however, I am committing to posting
-at least once a week.  A promise writ on the water of the vast and
-tempestuous ocean that is the internet; yet one intend to keep.
+at least once a week- a promise writ on the water of the vast and
+tempestuous ocean that is the internet.
 
 The word blog used to bother me quite a bit.  At this stage in my life I
 have more important things to worry about, so I accept there is no changing
