@@ -5,4 +5,4 @@ build:
 	hugo -t lanyon-hugo
 
 push:
-	aws --profile publisher s3 sync .\\public\\ s3://aws-website-non-volatilememory-spll5
+	aws --profile publisher s3 sync ./public/ s3://aws-website-non-volatilememory-spll5
