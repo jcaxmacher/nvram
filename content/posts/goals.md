@@ -10,7 +10,7 @@ tags = ["goals", "beginnings"]
 One of my goals for 2019 is to grow occupationally through increased confidence.
 The way I've chosen to tackle this goal is through intentional, periodic publication of
 my thoughts and ideas on this website. By doing this, I hope to achieve better balance
-between learning new things (which I love to do do), and sharing what I have learned publicly.
+between learning new things (which I love to do), and sharing what I have learned publicly.
 This should help increase my confidence as I shed my worries about saying the wrong thing, or
 saying it the the wrong way.  Objective (as far as I can tell) external measures have indicated
 that I am good at what I do, so the deficiency in confidence is not from lack of skill or experience,
