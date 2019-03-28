@@ -1,165 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Non-volatile Memory </title>
+    <title>Non-volatile Memory</title>
     <link>https://nvram.io/</link>
+    <description>Recent content on Non-volatile Memory</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author></author>
-    <rights>(C) 2018</rights>
-    <updated>2018-09-11 16:41:08 -0400 EDT</updated>
-
+    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-      
-        <item>
-          <title>Manage AWS Saml Roles for G Suite Users</title>
-          <link>https://nvram.io/post/manage-aws-saml-roles/</link>
-          <pubDate>Tue, 11 Sep 2018 16:41:08 EDT</pubDate>
-          <author></author>
-          <guid>https://nvram.io/post/manage-aws-saml-roles/</guid>
-          <description>
-
-&lt;p&gt;I recently setup G Suite (aka Google Apps for Work) as the SAML IdP for my
-personal AWS account following &lt;a href=&#34;https://aws.amazon.com/blogs/security/how-to-set-up-federated-single-sign-on-to-aws-using-google-apps/&#34;&gt;these instructions&lt;/a&gt;.  Once it was done, I had
-a very simple way to log into my AWS console using my existing G Suite credentials.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dmhnzl5mp9mj6.cloudfront.net/security_awsblog/images/WD_2.png&#34; alt=&#34;SAML
-architecture&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now I no longer need to remember my IAM user password (well, it was in a password
-manager, but it&amp;rsquo;s one less thing) and I get the additional benefit of my G
-Suite-configured MFA settings.  I like this a lot better than the MFA that
-AWS provides for IAM users because Google&amp;rsquo;s &lt;a href=&#34;https://gsuiteupdates.googleblog.com/2017/10/making-google-prompt-primary-choice-for-2sv.html&#34;&gt;2-Step verification phone prompts&lt;/a&gt; make MFA so simple.&lt;/p&gt;
-
-&lt;h2 id=&#34;api-access&#34;&gt;API Access&lt;/h2&gt;
-
-&lt;p&gt;However, I had one more requirement for IAM users- AWS API access.  Thankfully,
-someone has &lt;a href=&#34;https://github.com/cevoaustralia/aws-google-auth&#34;&gt;already created a solution&lt;/a&gt;
-for getting temporary AWS Access Keys using the Google Apps SAML provider.  You
-simply provide a few key pieces of information to the tool&amp;rsquo;s command line
-interface:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;aws-google-auth -u user@yourgsuitedomain.com -I I3892idw, -S 834286658791 -R us-east-1 -d 3600 -a
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This tool even triggers the MFA phone prompts I&amp;rsquo;ve configured for my account.
-The &lt;code&gt;-a&lt;/code&gt; flag causes it to prompt for selection of the desired AWS role, so if
-you&amp;rsquo;ve configured multiple roles for a G Suite user you can select which one you
-want the access keys for.  The access keys are then written to your AWS
-credentials file under the &lt;code&gt;sts&lt;/code&gt; profile name (though there is a flag to specify
-a different name).&lt;/p&gt;
-
-&lt;h2 id=&#34;roles-for-identity-federation&#34;&gt;Roles for Identity Federation&lt;/h2&gt;
-
-&lt;p&gt;Now that I had my G Suite user configured with a custom schema and an AWS IAM
-role (see the first link, about one third down the page), I wanted an simple way
-to add and remove roles from my user account.&lt;/p&gt;
-
-&lt;p&gt;I am obsessed with the principle of least privilege, so I am always crafting
-new IAM policies and wanting to test them out.
-&lt;a href=&#34;https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html&#34;&gt;CloudFormation&lt;/a&gt;
-is the best way quickly create and destroy IAM policies and
-&lt;a href=&#34;https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp_saml.html&#34;&gt;roles for Identity Federation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s an example CloudFormation template I was using test limiting of access to
-EC2 Instance creation:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;AWSTemplateFormatVersion: &amp;quot;2010-09-09&amp;quot;
-Resources:
-  DevTeamEC2Role:
-    Type: AWS::IAM::Role
-    Properties:
-      AssumeRolePolicyDocument:
-        Version: &amp;quot;2012-10-17&amp;quot;
-        Statement:
-          -
-            Effect: &amp;quot;Allow&amp;quot;
-            Action: &amp;quot;sts:AssumeRoleWithSAML&amp;quot;
-            Principal:
-              Federated: !Sub &amp;quot;arn:aws:iam::${AWS::AccountId}:saml-provider/GoogleApps&amp;quot;
-            Condition:
-              StringEquals:
-                SAML:aud: https://signin.aws.amazon.com/saml
-      Path: &amp;quot;/&amp;quot;
-      Policies:
-        -
-          PolicyName: &amp;quot;DevTeamStopStartTerminate&amp;quot;
-          PolicyDocument:
-            Version: &amp;quot;2012-10-17&amp;quot;
-            Statement:
-              -
-                Sid: &amp;quot;AllowDevTeamStartStopTerminate&amp;quot;
-                Effect: &amp;quot;Allow&amp;quot;
-                Action: 
-                - &amp;quot;ec2:StopInstances&amp;quot;
-                - &amp;quot;ec2:StartInstances&amp;quot;
-                - &amp;quot;ec2:TerminateInstances&amp;quot;
-                Resource: &amp;quot;*&amp;quot;
-                Condition:
-                  StringEquals:
-                    &amp;quot;ec2:ResourceTag/Department&amp;quot;: &amp;quot;Dev Team A&amp;quot;
-Outputs:
-  RoleName:
-    Description: &amp;quot;The ARN of the role created&amp;quot;
-    Value: !GetAtt DevTeamEC2Role.Arn
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;With that template, I can quickly create the role and policy I want to test:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;aws --profile sts cloudformation create-stack --stack-name devteam --template-body file://teststopstart.yaml --capabilities CAPABILITY_IAM
-... after a minute or so ...
-aws --profile sts cloudformation describe-stacks --stack-name devteam
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;describe-stacks&lt;/code&gt; API call will give me the name of the role created.  Now
-how do I quickly add it to my G Suite user?&lt;/p&gt;
-
-&lt;h2 id=&#34;multiple-roles&#34;&gt;Multiple Roles&lt;/h2&gt;
-
-&lt;p&gt;I began with &lt;a href=&#34;https://developers.google.com/admin-sdk/directory/v1/quickstart/python&#34;&gt;the code here&lt;/a&gt;
-which uses the G Suite Directory API to list out
-users in my G Suite domain and then modified it to patch the custom schema (the
-one added when the identity federation was setup.  &lt;a href=&#34;https://github.com/jcaxmacher/google-cloud-aws-role-helper&#34;&gt;The command line tool I
-created&lt;/a&gt; adds or
-removes roles to the given user.&lt;/p&gt;
-
-&lt;p&gt;It requires some secret OAuth information, so I stored those in AWS Secrets Manager
-and the command line tool downloads them right before making the G Suite
-Directory API calls.  For example, this invocation adds the role &lt;code&gt;ServerlessDev&lt;/code&gt;
-(it&amp;rsquo;s name in AWS) to my user &lt;code&gt;frank@custom.com&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;python modify_roles.py sts GoogleApps frank@custom.com ADD ServerlessDev
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, I can quickly create roles and policies for test and just as quickly add
-them to my G Suite user.  Then it&amp;rsquo;s back to the &lt;code&gt;aws-google-auth&lt;/code&gt; tool to get
-temporary access keys for that role.&lt;/p&gt;
-</description>
-        </item>
-      
+	<atom:link href="https://nvram.io/index.xml" rel="self" type="application/rss+xml" />
     
-      
-        <item>
-          <title>habits</title>
-          <link>https://nvram.io/post/habits/</link>
-          <pubDate>Sun, 02 Sep 2018 14:03:12 EDT</pubDate>
-          <author></author>
-          <guid>https://nvram.io/post/habits/</guid>
-          <description>&lt;p&gt;It&amp;rsquo;s time I started a blog and actually wrote a few things down, if only to help
-clarify my thoughts and better remember the things I learn.  While I hope some
-of what I write will be useful to others, if it&amp;rsquo;s not that will be OK.  I plan
-to mostly write about the cloud and software.  So, let&amp;rsquo;s give it a shot.  What
-could go wrong?&lt;/p&gt;
-
-&lt;p&gt;The word blog used to bother me quite a bit.  I was younger and had fewer things
-of actual importance to care about.  At this stage in my life &amp;ldquo;someone is doing
-something I find dumb on the internet&amp;rdquo; is not quite newsworthy, so I accept
-there is no changing the term blog.  No amount of campaigning to &amp;ldquo;Make Online
-Journaling Great Again!&amp;rdquo; will remove the word blog from our lexicon.
-However, I am quite happy the term &lt;a href=&#34;https://xkcd.com/181/&#34;&gt;&amp;ldquo;blogosphere&amp;rdquo;&lt;/a&gt; has gone out of fashion.&lt;/p&gt;
-</description>
-        </item>
-      
     
-
+    <item>
+      <title>On Managed Services and the Market for Self-Managing Services</title>
+      <link>https://nvram.io/posts/managed-services/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/posts/managed-services/</guid>
+      <description>Managed Services in the public cloud are important information technology value accelerators and there is a significant opportunity for third parties to provide businesses with Self-Managing Services in cloud marketplaces that provide a similar value proposition. There&amp;rsquo;s no denying that managed services in the public cloud provide a great value by allowing businesses to avoid a fair bit of muck and, instead, apply their efforts to areas that will make more of a difference to the bottom line.</description>
+    </item>
+    
+    <item>
+      <title>Building a URL Shortener on AWS using the AWS CDK</title>
+      <link>https://nvram.io/posts/an-aws-cdk-example/</link>
+      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/posts/an-aws-cdk-example/</guid>
+      <description>With the introduction of the AWS CDK, there&amp;rsquo;s a great new way to create cloud resources on Amazon Web Services. I have been kicking the tires on it since watching the re:Invent talk &amp;ldquo;Infrastructure is Code&amp;rdquo; a few weeks ago. What I have found will not be surprising to anyone who comes from a software engineering background - using an actual* programming language for creating cloud resources is a much more enjoyable experience than writing CloudFormation templates.</description>
+    </item>
+    
+    <item>
+      <title>Manage AWS Saml Roles for G Suite Users</title>
+      <link>https://nvram.io/posts/manage-aws-saml-roles/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/posts/manage-aws-saml-roles/</guid>
+      <description>I recently setup G Suite (aka Google Apps for Work) as the SAML IdP for my personal AWS account following these instructions. Once it was done, I had a very simple way to log into my AWS console using my existing G Suite credentials.
+Now I no longer need to remember my IAM user password (well, it was in a password manager, but it&amp;rsquo;s one less thing) and I get the additional benefit of my G Suite-configured MFA settings.</description>
+    </item>
+    
+    <item>
+      <title>Goals</title>
+      <link>https://nvram.io/posts/goals/</link>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://nvram.io/posts/goals/</guid>
+      <description>One of my goals for 2019 is to grow occupationally through increased confidence. The way I&amp;rsquo;ve chosen to tackle this goal is through intentional, periodic publication of my thoughts and ideas on this website. By doing this, I hope to achieve better balance between learning new things (which I love to do do), and sharing what I have learned publicly. This should help increase my confidence as I shed my worries about saying the wrong thing, or saying it the the wrong way.</description>
+    </item>
+    
   </channel>
 </rss>

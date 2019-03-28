@@ -1,0 +1,9 @@
+{{ if or ( .Site.Params.avatar ) ( .Site.Params.author ) ( .Site.Params.bio ) ( .Site.Params.contact ) }}
+<aside class="p-author">
+  {{ with .Site.Params.avatar }}
+  <div class="c-avatar p-author__avatar">
+    <img alt="Author Avatar" src="{{ . }}" />
+  </div>
+  {{ end }}
+</aside>
+{{ end }}

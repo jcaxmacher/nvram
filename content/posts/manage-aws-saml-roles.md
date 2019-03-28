@@ -1,7 +1,10 @@
 ---
 title: "Manage AWS Saml Roles for G Suite Users"
-date: 2018-09-11T16:41:08-04:00
+linktitle: "Manage AWS Saml Roles for G Suite Users"
+date: 2019-03-11
+author: "Jeremy Axmacher"
 draft: false
+tags: ["aws", "python", "gsuite", "mfa", "saml", "iam"]
 ---
 
 I recently setup G Suite (aka Google Apps for Work) as the SAML IdP for my
@@ -41,8 +44,8 @@ Now that I had my G Suite user configured with a custom schema and an AWS IAM
 role (see the first link, about one third down the page), I wanted an simple way
 to add and remove roles from my user account.
 
-I am obsessed with the principle of least privilege, so I am always crafting
-new IAM policies and wanting to test them out.
+I believe the principle of least privilege is very important, so I am always crafting
+new IAM policies that try to limit the permissions to exactly what's needed and only that.  Naturally, this requires lots of iteration and testing.
 [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html)
 is the best way quickly create and destroy IAM policies and
 [roles for Identity Federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp_saml.html)

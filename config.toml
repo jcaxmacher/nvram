@@ -6,3 +6,9 @@ pygmentsStyle = "eighties"
 [params]
   title = "Non-volatile Memory"
   pygmentscodefences = true
+  custom_css = ["css/mine.css"]
+  paginate = 10
+  twitter = "jcaxmacher"
+  github = "jcaxmacher"
+  linkedin = "jcaxmacher"
+  author = "Jeremy Axmacher"

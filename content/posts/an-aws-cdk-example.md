@@ -1,7 +1,10 @@
 ---
 title: "Building a URL Shortener on AWS using the AWS CDK"
-date: 2018-12-13T12:00:00-04:00
-draft: true
+linktitle: "An AWS CDK URL Shortener"
+date: 2019-03-15
+author: "Jeremy Axmacher"
+draft: false
+tags: ["aws", "cdk", "code", "iaac"]
 ---
 
 With the introduction of the AWS CDK, there's a great new way to create cloud resources on Amazon Web Services.  I have been kicking the tires on it since watching the re:Invent talk "Infrastructure is Code" a few weeks ago.  What I have found will not be surprising to anyone who comes from a software engineering background - using an actual\* programming language for creating cloud resources is a much more enjoyable experience than writing CloudFormation templates. <strong>If you use AWS in a business context, you should strongly consider [assessing and possibly trialing](http://nealford.com/memeagora/2013/05/28/build_your_own_technology_radar.html#assess) the AWS CDK for creating cloud resources.</strong>
@@ -12,7 +15,7 @@ It comes down to ergonomics (i.e., human efficiency in their working environment
 
 ## An Example - URL Shortener
 
-The other day I came across [a very nice blog post on how to create a Serverless URL Shortener on AWS](https://blog.ruanbekker.com/blog/2018/11/30/how-to-setup-a-serverless-url-shortener-with-api-gateway-lambda-and-dynamodb-on-aws/).  With serverless technologies like Lambda, DynamoDB and API Gateway, a scalable URL shortening service can be created in a very small number of steps.  I wondered how easy it would be to spin up this same service (using the same\* business logic) using the AWS CDK.  If you want, jump to the repository to see the full example code in one place.
+A few months ago I came across [a very nice blog post on how to create a Serverless URL Shortener on AWS](https://blog.ruanbekker.com/blog/2018/11/30/how-to-setup-a-serverless-url-shortener-with-api-gateway-lambda-and-dynamodb-on-aws/).  With serverless technologies like Lambda, DynamoDB and API Gateway, a scalable URL shortening service can be created in a very small number of steps.  I wondered how easy it would be to spin up this same service (using the same\* business logic) using the AWS CDK.  If you want, jump to the repository to see the full example code in one place.
 
 ### Pre-requisites
 
@@ -321,4 +324,4 @@ of its deployment stages) to the custom domain we just created:
 
 ## Summary
 
-So, for about 77 lines of code we deploy a com
+So, for about 77 lines of code we deploy a fully-functional URL Shortening service-- not too bad.  Technology continues to advance at an amazing rate as we all collectively learn (and re-learn sometimes) the best way of doing things.  Once again, I believe the AWS CDK is an example of what the future of cloud infrastructure looks like and if you work in the cloud space, you should definitely give it a test run.
