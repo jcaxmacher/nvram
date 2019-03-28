@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Managed Services on Non-volatile Memory</title>
+    <link>https://nvram.io/tags/managed-services/</link>
+    <description>Recent content in Managed Services on Non-volatile Memory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://nvram.io/tags/managed-services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>On Managed Services and the Market for Self-Managing Services</title>
+      <link>https://nvram.io/posts/managed-services/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/posts/managed-services/</guid>
+      <description>Managed Services in the public cloud are important information technology value accelerators and there is a significant opportunity for third parties to provide businesses with Self-Managing Services in cloud marketplaces that provide a similar value proposition. There&amp;rsquo;s no denying that managed services in the public cloud provide a great value by allowing businesses to avoid a fair bit of muck and, instead, apply their efforts to areas that will make more of a difference to the bottom line.</description>
+    </item>
+    
+  </channel>
+</rss>

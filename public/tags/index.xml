@@ -6,9 +6,127 @@
     <description>Recent content in Tags on Non-volatile Memory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nvram.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Aws</title>
+      <link>https://nvram.io/tags/aws/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beginnings</title>
+      <link>https://nvram.io/tags/beginnings/</link>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://nvram.io/tags/beginnings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cdk</title>
+      <link>https://nvram.io/tags/cdk/</link>
+      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/cdk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://nvram.io/tags/code/</link>
+      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Goals</title>
+      <link>https://nvram.io/tags/goals/</link>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://nvram.io/tags/goals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gsuite</title>
+      <link>https://nvram.io/tags/gsuite/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/gsuite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iaac</title>
+      <link>https://nvram.io/tags/iaac/</link>
+      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/iaac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iam</title>
+      <link>https://nvram.io/tags/iam/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/iam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Managed Services</title>
+      <link>https://nvram.io/tags/managed-services/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/managed-services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mfa</title>
+      <link>https://nvram.io/tags/mfa/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/mfa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prediction</title>
+      <link>https://nvram.io/tags/prediction/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/prediction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://nvram.io/tags/python/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Saml</title>
+      <link>https://nvram.io/tags/saml/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/saml/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
