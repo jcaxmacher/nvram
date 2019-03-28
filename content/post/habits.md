@@ -1,28 +1,19 @@
 +++
-date = "2017-07-10T17:15:46-04:00"
+date = "2018-09-02T14:03:12-04:00"
 title = "habits"
 draft = false
 
 +++
 
-I heard there's a new habit-forming drug on the market called blogging.
-Funny name for a drug, right?  Anyway, people say that it can help improve
-your life (unlike illegal drugs which will likely wreck it).
-
-In what ways can it improve my life, you ask?  Blogging has been linked to
-improving the quality of one's communication, clarifying one's thoughts on
-a topic and raising one's public profile.  So, I'm giving it a shot.  What
+It's time I started a blog and actually wrote a few things down, if only to help
+clarify my thoughts and better remember the things I learn.  While I hope some
+of what I write will be useful to others, if it's not that will be OK.  I plan
+to mostly write about the cloud and software.  So, let's give it a shot.  What
 could go wrong?
 
-I don't want to lie to you, dear reader.  This is not my first blog.
-The road behind me is littered with cleverly titled (or so I thought) and
-sparsely populated blogs.  This time, however, I am committing to posting
-at least once a week- a promise writ on the water of the vast and
-tempestuous ocean that is the internet.
-
-The word blog used to bother me quite a bit.  At this stage in my life I
-have more important things to worry about, so I accept there is no changing
-it.  No amount of campaigning to "Make Online Journaling Great Again!" will
-remove the word blog from our lexicon.  However, I am going to continue
-nursing my desire that the word blogosphere be burned with fire until it
-is dead.
+The word blog used to bother me quite a bit.  I was younger and had fewer things
+of actual importance to care about.  At this stage in my life "someone is doing
+something I find dumb on the internet" is not quite newsworthy, so I accept
+there is no changing the term blog.  No amount of campaigning to "Make Online
+Journaling Great Again!" will remove the word blog from our lexicon.
+However, I am quite happy the term ["blogosphere"](https://xkcd.com/181/) has gone out of fashion.

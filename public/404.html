@@ -42,7 +42,9 @@
 
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+    <p class="sidebar-quote">Nothing stands out so conspicuously, or remains so firmly fixed in the memory, as something which you have blundered.
+    </p>
+    <footer class="sidebar-quote-attribution">— Marcus Tullius Cicero</footer>
   </div>
 
   <nav class="sidebar-nav">
@@ -57,14 +59,16 @@
     
       
     
-
-    <a class="sidebar-nav-item" href="/archive/.zip">Download</a>
-    <a class="sidebar-nav-item" href="">GitHub project</a>
-    <span class="sidebar-nav-item">Currently on </span>
+      
+    
+      
+    
+      
+    
   </nav>
 
   <div class="sidebar-item">
-    <p>&copy; 2017. All rights reserved.</p>
+    <p>&copy; 2018. All rights reserved.</p>
   </div>
 </div>
 
@@ -92,6 +96,53 @@
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+	<script>
+		(function(f, a, t, h, o, m){	a[h]=a[h]||function(){
+				(a[h].q=a[h].q||[]).push(arguments)
+				};
+				o=f.createElement('script'),
+					m=f.getElementsByTagName('script')[0];
+				o.async=1; o.src=t; o.id='fathom-script';
+				m.parentNode.insertBefore(o,m)
+		})(document, window, '//analytics.nvram.io/tracker.js', 'fathom');
+fathom('set', 'siteId', 'XYWDE');
+fathom('trackPageview');
+	</script>
+	
+
+	<script type="text/javascript">
+		 var quotes = [
+			       {'quote': 'Nothing stands out so conspicuously, or remains so firmly fixed in the memory, as something which you have blundered.',
+				              'attribution': 'Marcus Tullius Cicero'},
+			       {'quote': 'Time moves in one direction, mery in another.',
+				              'attribution': 'William Gibson'},
+			       {'quote': 'If you wish to forget anything on the spot, make a note that this thing is to be remembered.',
+				              'attribution': 'Edgar Allan Poe'},
+			       {'quote': 'Just as food eaten without appetite is a tedious nourishment, so does study without zeal damage the memory by not assimilating whatit absorbs.',
+				              'attribution': 'Leonardo da Vinci'},
+			      {'quote': 'A clear conscience is the sure sign of a bad memory.',
+				             'attribution': 'Mark Twain'},
+			       {'quote': 'I thik it is all a matter of love: the more you love a memory, the stronger d stranger it is.',
+				              'attribution': 'Vladimir Nabokov'},
+			       {'quoe': 'There was a long hard time when I kept far from me the remembrance of what I had thrown away when I was quite ignorant of its worth.',
+				              'attribution': 'harles Dickens, Great Expectations'},
+			       {'quote': 'Every man\'s memory is his private literature.',
+				              'attribution': 'Aldous Huxley'},
+			       {'quote': 'Only those with no memory insist on their originality.',
+				              'attribution': 'Coco Chanel'},
+			       {'quote': 'Footflls echo in the memory<br>Down the passage we did not take<br>Towards the door we never opened<br>Into the rose garden. My words echo<br>Thus, in your mind',
+				              'attribution': 'T.S. Eliot, Four Quartets'}
+			     ];
+    window.onload = function() {
+	          var millisecondsThisYear = (new Date()) - (new Date((new Date()).getFullYear(), 0, 0));
+	         var millisecondsInDay = 1000 * 60 * 60 * 24;
+	          var dayOfTheYear = Math.floor(millisecondsThisYear / millisecondsInDay);
+	          var quote = quotes[dayOfTheYear % quotes.length];
+	          document.querySelector('.sidebar-quote').inerHTML = quote['quote'];
+	          document.querySelector('.sidebar-quote-attribution').innerHTML = '— ' + quote['attribution'];
+	        }
+	</script>
 
   </body>
 </html>
