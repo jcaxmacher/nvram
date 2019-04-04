@@ -20,24 +20,5 @@
       <description>Managed Services in the public cloud are important information technology value accelerators and there is a significant opportunity for third parties to provide businesses with Self-Managing Services in cloud marketplaces that provide a similar value proposition. There&amp;rsquo;s no denying that managed services in the public cloud provide a great value by allowing businesses to avoid a fair bit of muck and, instead, apply their efforts to areas that will make more of a difference to the bottom line.</description>
     </item>
     
-    <item>
-      <title>Building a URL Shortener on AWS using the AWS CDK</title>
-      <link>https://nvram.io/posts/an-aws-cdk-example/</link>
-      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://nvram.io/posts/an-aws-cdk-example/</guid>
-      <description>With the introduction of the AWS CDK, there&amp;rsquo;s a great new way to create cloud resources on Amazon Web Services. I have been kicking the tires on it since watching the re:Invent talk &amp;ldquo;Infrastructure is Code&amp;rdquo; a few weeks ago. What I have found will not be surprising to anyone who comes from a software engineering background - using an actual* programming language for creating cloud resources is a much more enjoyable experience than writing CloudFormation templates.</description>
-    </item>
-    
-    <item>
-      <title>Manage AWS Saml Roles for G Suite Users</title>
-      <link>https://nvram.io/posts/manage-aws-saml-roles/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://nvram.io/posts/manage-aws-saml-roles/</guid>
-      <description>I recently setup G Suite (aka Google Apps for Work) as the SAML IdP for my personal AWS account following these instructions. Once it was done, I had a very simple way to log into my AWS console using my existing G Suite credentials.
-Now I no longer need to remember my IAM user password (well, it was in a password manager, but it&amp;rsquo;s one less thing) and I get the additional benefit of my G Suite-configured MFA settings.</description>
-    </item>
-    
   </channel>
 </rss>

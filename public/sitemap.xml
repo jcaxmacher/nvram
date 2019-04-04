@@ -13,16 +13,6 @@
   </url>
   
   <url>
-    <loc>https://nvram.io/posts/an-aws-cdk-example/</loc>
-    <lastmod>2019-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nvram.io/posts/manage-aws-saml-roles/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nvram.io/posts/goals/</loc>
     <lastmod>2019-03-02T00:00:00-05:00</lastmod>
   </url>
@@ -55,18 +45,6 @@
   </url>
   
   <url>
-    <loc>https://nvram.io/tags/cdk/</loc>
-    <lastmod>2019-03-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nvram.io/tags/code/</loc>
-    <lastmod>2019-03-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nvram.io/tags/devops/</loc>
     <lastmod>2019-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -75,24 +53,6 @@
   <url>
     <loc>https://nvram.io/tags/goals/</loc>
     <lastmod>2019-03-02T00:00:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nvram.io/tags/gsuite/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nvram.io/tags/iaac/</loc>
-    <lastmod>2019-03-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nvram.io/tags/iam/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -114,12 +74,6 @@
   </url>
   
   <url>
-    <loc>https://nvram.io/tags/mfa/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nvram.io/</loc>
     <lastmod>2019-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -134,18 +88,6 @@
   <url>
     <loc>https://nvram.io/tags/prediction/</loc>
     <lastmod>2019-03-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nvram.io/tags/python/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nvram.io/tags/saml/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
