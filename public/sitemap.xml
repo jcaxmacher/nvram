@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://nvram.io/posts/agile-devops-sre-common-thread/</loc>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nvram.io/posts/managed-services/</loc>
     <lastmod>2019-03-26T00:00:00+00:00</lastmod>
   </url>
@@ -24,6 +29,12 @@
   
   <url>
     <loc>https://nvram.io/layouts/partials/footer_custom/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nvram.io/tags/agile/</loc>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -52,6 +63,12 @@
   <url>
     <loc>https://nvram.io/tags/code/</loc>
     <lastmod>2019-03-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nvram.io/tags/devops/</loc>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -85,6 +102,12 @@
   </url>
   
   <url>
+    <loc>https://nvram.io/tags/learning-organizations/</loc>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nvram.io/tags/managed-services/</loc>
     <lastmod>2019-03-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -98,13 +121,13 @@
   
   <url>
     <loc>https://nvram.io/</loc>
-    <lastmod>2019-03-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nvram.io/posts/</loc>
-    <lastmod>2019-03-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -127,8 +150,20 @@
   </url>
   
   <url>
+    <loc>https://nvram.io/tags/sre/</loc>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nvram.io/tags/supply-and-demand/</loc>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nvram.io/tags/</loc>
-    <lastmod>2019-03-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

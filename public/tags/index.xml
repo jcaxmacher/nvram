@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Non-volatile Memory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nvram.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Agile</title>
+      <link>https://nvram.io/tags/agile/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/agile/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Aws</title>
@@ -48,6 +57,15 @@
     </item>
     
     <item>
+      <title>Devops</title>
+      <link>https://nvram.io/tags/devops/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Goals</title>
       <link>https://nvram.io/tags/goals/</link>
       <pubDate>Sat, 02 Mar 2019 00:00:00 -0500</pubDate>
@@ -80,6 +98,15 @@
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://nvram.io/tags/iam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Organizations</title>
+      <link>https://nvram.io/tags/learning-organizations/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/learning-organizations/</guid>
       <description></description>
     </item>
     
@@ -125,6 +152,24 @@
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://nvram.io/tags/saml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sre</title>
+      <link>https://nvram.io/tags/sre/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/sre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Supply and Demand</title>
+      <link>https://nvram.io/tags/supply-and-demand/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/tags/supply-and-demand/</guid>
       <description></description>
     </item>
     

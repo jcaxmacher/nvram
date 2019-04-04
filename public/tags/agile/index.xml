@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agile on Non-volatile Memory</title>
+    <link>https://nvram.io/tags/agile/</link>
+    <description>Recent content in Agile on Non-volatile Memory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://nvram.io/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agile, Dev(Sec)Ops, SRE, et al. - Finding the common thread for business</title>
+      <link>https://nvram.io/posts/agile-devops-sre-common-thread/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvram.io/posts/agile-devops-sre-common-thread/</guid>
+      <description>In the past three decades, the Information Technology industry has seen the rise of many new methodologies and movements that purport to deliver certain benefits like improved team communication &amp;amp; coordination, directional agility, production quality &amp;amp; consistency, and faster customer feedback, to name a few. While these methodologies have differing foci, I believe that fundamental value provided to a business is the same for all of them. At their core, they enable businesses to use technology to move the demand curve for their product.</description>
+    </item>
+    
+  </channel>
+</rss>
