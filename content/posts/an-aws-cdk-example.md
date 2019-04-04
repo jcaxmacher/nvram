@@ -3,7 +3,7 @@ title: "Building a URL Shortener on AWS using the AWS CDK"
 linktitle: "An AWS CDK URL Shortener"
 date: 2019-03-15
 author: "Jeremy Axmacher"
-draft: false
+draft: true
 tags: ["aws", "cdk", "code", "iaac"]
 ---
 

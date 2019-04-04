@@ -3,7 +3,7 @@ title: "Manage AWS Saml Roles for G Suite Users"
 linktitle: "Manage AWS Saml Roles for G Suite Users"
 date: 2019-03-11
 author: "Jeremy Axmacher"
-draft: false
+draft: true
 tags: ["aws", "python", "gsuite", "mfa", "saml", "iam"]
 ---
 
