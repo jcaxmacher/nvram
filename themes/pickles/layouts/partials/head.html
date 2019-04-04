@@ -21,6 +21,9 @@
   <meta property="og:image" content="{{ . | absURL }}" />
   <meta name="twitter:image" content="{{ . | absURL }}" />
   {{ end }}
+  {{ with .Params.thumbnailattribution }}
+  <meta property="og:image:alt" content="{{ . }}" />
+  {{ end }}
   <meta name="twitter:card" content="summary" />
 
   {{ with .Site.Params.twitter }}

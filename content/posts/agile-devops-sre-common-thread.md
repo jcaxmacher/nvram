@@ -5,6 +5,7 @@ date: 2019-04-04
 author: "Jeremy Axmacher"
 draft: false
 thumbnail: "/images/change.jpg"
+thumbnailattribution: "SomeDriftwood/Flickr/CreativeCommons"
 tags: ["agile", "devops", "sre", "supply and demand", "learning organizations"]
 ---
 
