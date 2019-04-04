@@ -9,9 +9,9 @@ thumbnailattribution: "SomeDriftwood/Flickr/CreativeCommons"
 tags: ["agile", "devops", "sre", "supply and demand", "learning organizations"]
 ---
 
-In the past three decades, the Information Technology industry has seen the rise of many new methodologies and movements that purport to deliver certain benefits like improved team communication & coordination, directional agility, production quality & consistency, and faster customer feedback, to name a few.  While these methodologies have differing foci, I believe that fundamental value provided to a business is the same for all of them.  At their core, they enable businesses to use technology to move the demand curve for their product.  Of course, there are human benefits that are a core element of these methodologies, but our focus here is on why these matter for businesses.
+In the past three decades, the Information Technology industry has seen the rise of many new methodologies, architectures and movements that purport to deliver certain benefits like improved team communication & coordination, directional agility, production quality & consistency, and faster customer feedback, to name a few.  While these methodologies have differing foci, I believe that fundamental value provided to a business is the same for all of them.  At their core, they enable businesses to use technology to move the demand curve for their product.  Of course, there are human benefits that are a core element of these methodologies, but our focus here is on why these matter for businesses.
 
-> At their core, Agile, Dev(Sec)Ops and SRE enable businesses to use technology to move the demand curve for their products.
+> At their core, Agile, Dev(Sec)Ops, SRE, Microservices, etc. enable businesses to use technology to move the demand curve for their products.
 
 ## Economics and the Internet
 
@@ -24,7 +24,7 @@ Then, in the late 1990s and early 2000s, the internet began to take the shape th
 
 ## So what are Agile, DevSecOps and SRE?
 
-As mentioned earlier, the big names in IT methodologies focus on different areas and advocate different means for improvement.  If you're in the IT industry you'll be familiar with these terms, but it never hurts to ensure we have a shared language.  I'll briefly describe Agile, DevOps and SRE.
+As mentioned earlier, the big names in IT methodologies focus on different areas and advocate different means for improvement.  If you're in the IT industry you'll be familiar with these terms, but it never hurts to ensure we have a shared language.  I'll briefly describe Agile, DevOps and SRE.  I left out Microservices architectures (and many other examples) for brevity, but it is another example of an methodology that, if the solution matches the problem, promises to delivery faster time to market.
 
 Agile, at least [as it was initially conceived](https://agilemanifesto.org/),  is a movement geared toward improving software development by 1) improving collaboration within the teams building software, 2) focusing on delivering working software in very short, regular intervals, 3) getting customer input throughout the development process and 4) being very responsive to changes in direction.  Agile took some influence from Lean, which itself came from a study of the manufacturing process at Toyota.  The Lean ideas of identifying & eliminating waste and continuous improvement have found their way into various flavors of Agile.  Agile methodologies help with broken communication between developers, stakeholders and customers.
 
@@ -33,6 +33,7 @@ DevOps sprung up after Agile and put further focus on collaboration between team
 Site Reliability Engineering (SRE) is Google-flavored methodology for delivering and running software that has been described as "[a specific implementation of DevOps with some idiosyncratic extensions](https://landing.google.com/sre/sre-book/chapters/introduction/#devops-or-sre-8OS8HmcX )"  Two things, from my perspective, make it notably different from DevOps.  The first is the specific way SRE proposes to resolve the differing objectives of Development and IT Operations (see [error budgets](https://landing.google.com/sre/sre-book/chapters/introduction/#pursuing-maximum-change-velocity-without-violating-a-services-slo-pWsJh2iL)).  The second is the greater focus on automation of operational activities by software engineers/developers whose role is a superset of the traditional Ops/sysadmin role.
 
 These days Agile, Dev(Sec)Ops and SRE each come with a significant set of practices and tooling.  Though SRE is the only one that explicitly called for engineering/automation from its beginning, there is broad agreement that significant tooling is involved in implementing any one of them.  Many tooling vendors these days attempt to sell Agile/DevSecOps/SRE, when what they are really selling is a tool that will help with one of the processes or practices associated with the methodology.  Fundamentally, none of these methodologies can be implemented without establishing shared goals between teams and setting up forcing functions for collaboration and communication.  In practice, that is unlikely to happen in a large organization without organizational restructuring to align priorities.
+
 
 ## Practical Application
 
